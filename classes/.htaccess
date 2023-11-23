@@ -1,0 +1,6 @@
+Interdire l'accès à ce fichier
+<Files *.php>
+   Deny from all
+</Files>
+
+

@@ -1,0 +1,116 @@
+
+.onegame-game{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+.onegame-resume {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 60%;
+  }
+.onegame-resume .resume-container {
+    width:80%;
+}
+/*partie commentaire*/
+.comment-section {
+    width: 25%;
+    padding-right: 30px;
+    padding-top: 100px;
+  }
+  .comment-section .header {
+    display: flex;
+    justify-content: center;
+  }
+  .comment-section .header h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font-size);
+  }
+  .comment-section .comment-container {
+    margin-top: 50px;
+  }
+  .comment-section hr {
+    color: var(--main-color);
+    margin: 10px 0;
+  }
+  .comment-section form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+  }
+  .comment-section form h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font-size);
+  }
+  .comment-section form textarea {
+    background-color: var(--main-glassmorphism);
+    border: none;
+    margin: 50px 0;
+    width: 500px;
+    color: white;
+  }
+  .comment-section form button {
+    background-color: var(--main-color);
+    border-radius: var(--main-border-radius);
+    border: none;
+    color: var(--second-color);
+    padding: 20px;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+  }
+  .comment-section form button:hover {
+    background-color: rgb(45, 52, 108);
+    transition: 0.3s;
+  }
+  .comment {
+    word-wrap: break-word;
+    max-width: 300px;
+  }
+  @media screen and (max-width: 767px) {
+    .onegame-game {
+      display:flex;
+      flex-direction: column;
+    }
+    .onegame-resume{
+      width:100%;
+    }
+    .onegame-resume .resume-container{
+      width:90%;
+    }
+     .board-container {
+      width: 100%;
+      display:flex;
+      justify-content: center;
+    }
+    .ct-pgn-viewer-move-list-and-controls {
+      width:300px;
+    }
+    .comment-section {
+     width: 100%;
+     display:flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top:0px;
+      padding-right:0px;
+    }
+    .comment-section .register {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .comment-section form h2 {
+      text-align: center;
+    }
+    .comment-section form textarea{
+      width:300px;
+    }
+    .comment{
+      padding:10px;
+      max-width: 300px;
+      word-wrap: break-word;
+    }
+  }

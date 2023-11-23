@@ -1,0 +1,152 @@
+.register {
+    width: 30%;
+    margin: auto;
+    background: var(--main-glassmorphism);
+    backdrop-filter: var(--main-backdrop);
+    border-radius: var(--main-border-radius);
+    border: var(--main-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:30px;
+  }
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 30px 0px;
+    position: relative;
+  }
+  .input-container input {
+    background: var(--main-glassmorphism);
+    backdrop-filter: var(--main-backdrop);
+    border-radius: var(--main-border-radius);
+    height: 60px;
+    width: 250px;
+    outline: none;
+    border: none;
+    color: var(--second-color);
+  }
+  .input-container span {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    padding: 10px;
+    color: var(--second-color);
+    transition: 0.5s;
+    border-radius: 2px;
+    font-family: var(--main-font);
+  }
+  .input-container input:valid ~ span,
+  .input-container input:focus ~ span {
+    color: var(--second-color);
+    transform: translateX(10px) translateY(-15px);
+    padding: 0 10px;
+  
+    border-left: var(--main-border);
+    border-right: var(--main-border);
+    text-transform: uppercase;
+  }
+  .input-container input:valid,
+  .input-container input:focus {
+    border: var(--main-border);
+    outline: none;
+    border: none;
+  }
+  
+  .input-container:nth-child(3) input:valid ~ span,
+  .input-container:nth-child(3) input:focus ~ span {
+    background-color: var(--main-color);
+    color: var(--second-color);
+    border-radius: 2px;
+    text-transform: uppercase;
+  }
+  .input-container button {
+    background-color: var(--main-color);
+    border-radius: var(--main-border-radius);
+    border: none;
+    color: var(--second-color);
+    padding: 20px;
+    font-size: var(--h3-font-size);
+    cursor: pointer;
+  }
+  .input-container button:hover {
+    background-color: rgb(45, 52, 108);
+    transition: 0.3s;
+  }
+  .not-yet {
+    color: var(--second-color);
+    margin-bottom: 20px;
+  }
+  /******************************* textareaStylecontact************************************************************************/
+  .input-container textarea {
+    width: 250px;
+    height: 150px;
+    background-color: var(--main-glassmorphism);
+    border: none;
+    color:white;
+  }
+  .input-container textarea:valid,
+  .input-container textarea:focus {
+    border: var(--main-border);
+    outline: none;
+    border: none;
+  }
+  .input-container textarea:valid ~ span,
+  .input-container textarea:focus ~ span {
+    color: var(--second-color);
+    transform: translateX(10px) translateY(-15px);
+    padding: 0 10px;
+    border-left: var(--main-border);
+    border-right: var(--main-border);
+    text-transform: uppercase;
+  }
+
+  
+.publication-container .register {
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+.publication-container .register select {
+  background-color: var(--main-color);
+  border-radius: var(--main-border-radius);
+  border: none;
+  color: var(--second-color);
+  padding: 20px;
+  margin-bottom: 20px;
+  font-size: var(--h3-font-size);
+}
+.publication-container .register select:hover {
+  background-color: rgb(45, 52, 108);
+  transition: 0.3s;
+}
+.input-container-file {
+  margin: 20px 0;
+}
+.label-file {
+  cursor: pointer;
+  color: var(--second-color);
+  font-weight: bold;
+  font-size: var(--h3-font-size);
+}
+
+.publication-container .register button {
+  background-color: var(--main-color);
+  border-radius: var(--main-border-radius);
+  border: none;
+  color: var(--second-color);
+  padding: 20px;
+  font-size: var(--h3-font-size);
+  cursor: pointer;
+}
+.publication-container .register button:hover {
+  background-color: rgb(45, 52, 108);
+  transition: 0.3s;
+}
+
+
+@media screen and (max-width: 767px) {
+  .register{
+    width:90%;
+  }
+  }

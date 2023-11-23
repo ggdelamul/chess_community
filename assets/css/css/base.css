@@ -1,0 +1,30 @@
+/*reset css*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*root html*/
+:root {
+  --main-color: rgb(76, 89, 180);
+  --main-border-radius: 15px;
+  --main-border: 1px solid var(--main-color);
+  --main-backdrop: blur(4px);
+  --main-glassmorphism: rgba(76, 89, 180, 0.31);
+  --second-color: rgb(245, 245, 245);
+  --second-border: 1px solid var(--second-color);
+  --second-glassmorphism: rgba(245, 245, 245, 0.31);
+  --p-font-size: 14px;
+  --h3-font-size: 24px;
+  --h2-font-size: 36px;
+  --h1-font-size: 48px;
+  --title-font: "Verdana";
+  --main-font: "Helvetica";
+}
+.container {
+    color: var(--second-color);
+    background-image: url("../../image/effetdouble2.png");
+    background-size: 100%;
+  }

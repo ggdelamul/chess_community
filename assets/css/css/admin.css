@@ -1,0 +1,14 @@
+.comment-section-admin hr {
+    color: var(--main-color);
+    margin: 10px 0;
+  }
+  .comment{
+    padding:10px;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+  .comment-section-admin a {
+      color:white;
+  }
+
+  

@@ -1,0 +1,106 @@
+.member_section-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    margin-bottom: 100px;
+  }
+  .member_section-title {
+    grid-area: 1 / 1 / 2 / 6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .member_section-title h2 {
+    color: var(--main-color);
+    font-size: var(--h2-font-size);
+    margin: 18px 0;
+    font-family: "Verdana";
+  }
+  .last-game-resume-container h2 {
+    text-align: center;
+  }
+  .last-game-resume-container .resume-container .header-resume p > a {
+    color: white;
+  }
+  .second-menu-container {
+    grid-area: 2 / 5 / 6 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    padding-right: 35px;
+    gap: 40px;
+  }
+  .second-menu-container-title {
+    color: var(--main-color);
+    font-size: var(--h3-font-size);
+  }
+  .second-menu-wrapper {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .second-menu-container li {
+    list-style-type: none;
+    cursor: pointer;
+  }
+  .second-menu-container li > .main-item {
+    padding: 25px 0;
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+  .displayNone {
+    display: none;
+  }
+  .sub-item {
+    color: var(--second-color);
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 25px;
+  }
+  .publication-container a {
+    padding: 25px 0;
+    display: inline-block;
+  }
+  .resume-game_section {
+    grid-area: 2 / 1 / 6 / 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .publication-container a {
+    background-color: var(--main-color);
+    border-radius: var(--main-border-radius);
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 15px;
+  }
+  .publication-container a:hover {
+    background-color: rgb(45, 52, 108);
+    transition: 0.3s;
+  }
+
+  @media screen and (max-width: 767px) {
+    .member_section-container{
+      display:flex;
+      flex-direction: column;
+    }
+    .second-menu-container{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-right:0px;
+      margin-top: 30px;
+    }
+    .publication-container {
+      width:100%;
+      display:flex;
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,40 @@
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom:20px;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  tr {
+    border-bottom: var(--main-border);
+  }
+  td {
+    padding: 15px;
+    text-align: center;
+  }
+  th {
+    font-size: var(--h3-font-size);
+    padding: 15px;
+  }
+  td > a {
+    color: white;
+    font-size: var(--p-font-size);
+  }
+  td > p {
+    color: white;
+    font-size: var(--p-font-size);
+  }
+  td > p > a{
+    color: white;
+    font-size: var(--p-font-size);
+  }
+
+  @media screen and (max-width: 767px) {
+    table {
+      width:300px;
+    }
+    .desktop{
+      display:none;
+    }
+  }
